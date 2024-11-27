@@ -1,7 +1,7 @@
 #!/bin/bash
 
-VAULT_DIR="/path/to/ObsidianVault"
-cd $VAULT_DIR
+VAULT_DIR=${1:-"/Documents/Obsidian\ Vault"}
+cd "$VAULT_DIR" || { echo "Vault directory not found: $VAULT_DIR"; exit 1; }
 
 # Check for uncommitted changes
 if [[ -n $(git status --porcelain) ]]; then
