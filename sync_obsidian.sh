@@ -10,7 +10,13 @@ if [[ -n $(git status --porcelain) ]]; then
     git commit -m "Auto-save: $(date)"
 fi
 
-git pull --rebase
-git add .
-git commit -m "Auto-sync: $(date)"
+git pull --rebase || { echo "Rebase failed. Resolve conflicts manually."; exit 1; }
+
+# Commit only if there are changes
+if [[ -n $(git status --porcelain) ]]; then
+    echo "Syncing changes..."
+    git add .
+    git commit -m "Auto-sync: $(date)"
+fi
+
 git push
