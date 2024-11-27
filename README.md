@@ -20,10 +20,10 @@
 
 -->
 
-<h3 align="center">Title</h3>
+<h3 align="center">Sync Obsidian</h3>
 
   <p align="center">
-    Description
+    Simple script to sync your obsidian vault to GitHub for free.
     <br />
     <!--
     <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
@@ -109,11 +109,16 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 ### Prerequisites
 
+Your Obsidian vault must be a git directory.
 
 
 ### Installation
 
-
+Download the sync_obsidian.sh file. Replace `/path/to/ObsidianVault` with the actual path to your Obsidian vault.  
+Make the script executable:
+```bash
+chmod +x ./sync_obsidian.sh
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -122,6 +127,7 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 <!-- USAGE EXAMPLES -->
 ## Usage
 
+You can directly run the script or add a cron job for automatic updates.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
