@@ -134,7 +134,7 @@ The default directory is set to `~/Document/Obsidian Vault`. Change it to the ac
 ./sync_obsidian.sh /path/to/your_vault
 ```
 
-**Note**: Do NOT run this with sudo or it might rewrite the file owner and cause permission issues. If you accidentally use sudo, run `sudo chown -R user:user ~/Documents/Obsidian\ Vault` and change the ownership.
+**Note**: Do NOT run this with sudo or it might change the file ownership to root and cause permission issues. If this happens, reset the ownership by running `sudo chown -R user:user ~/Documents/Obsidian\ Vault`. Replace user:user with your username.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
