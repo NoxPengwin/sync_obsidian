@@ -114,8 +114,7 @@ Your Obsidian vault must be a git directory.
 
 ### Installation
 
-Download the sync_obsidian.sh file. Replace `/path/to/ObsidianVault` with the actual path to your Obsidian vault.  
-Make the script executable:
+Download the sync_obsidian.sh file and make the script executable:
 ```bash
 chmod +x ./sync_obsidian.sh
 ```
@@ -128,6 +127,11 @@ chmod +x ./sync_obsidian.sh
 ## Usage
 
 You can directly run the script or add a cron job for automatic updates.
+
+The default directory is set to `~/Document/Obsidian Vault`. Change it to the actual directory when you run the script for the first time:
+```bash
+./sync_obsidian.sh /path/to/your_vault
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
