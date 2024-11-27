@@ -78,6 +78,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
+This script syncs your Obsidian vault to your GitHub repo. It's for Linux but should work on macOS too.
 
 <!--
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
@@ -109,7 +110,7 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 ### Prerequisites
 
-Your Obsidian vault must be a git directory.
+Your Obsidian vault must be a git directory. Check the [guide](https://juntakemura.dev/obsidian-sync-free/)
 
 
 ### Installation
