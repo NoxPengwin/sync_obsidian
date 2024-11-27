@@ -1,6 +1,6 @@
 #!/bin/bash
 
-VAULT_DIR=${1:-"$HOME/Documents/Obsidian\ Vault"}
+VAULT_DIR=${1:-"$HOME/Documents/Obsidian Vault"}
 cd "$VAULT_DIR" || { echo "Vault directory not found: $VAULT_DIR"; exit 1; }
 
 # Check for uncommitted changes
