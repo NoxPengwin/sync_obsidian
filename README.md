@@ -127,12 +127,13 @@ chmod +x ./sync_obsidian.sh
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-You can directly run the script or add a cron job for automatic updates.
+You can either run the script manually or set up a cron job for automatic syncing.
 
-The default directory is set to `~/Document/Obsidian Vault`. Change it to the actual directory when you run the script for the first time:
+The default directory is set to `~/Document/Obsidian Vault`. If you need to sync a different location, specify the path when running the script:
 ```bash
 ./sync_obsidian.sh /path/to/your_vault
 ```
+Don't forget the argument for cron jobs. You can hardcode the path too.
 
 **Note**: Do NOT run this with sudo or it might change the file ownership to root and cause permission issues. If this happens, reset the ownership by running `sudo chown -R user:user ~/Documents/Obsidian\ Vault`. Replace `user:user` with your username.
 
